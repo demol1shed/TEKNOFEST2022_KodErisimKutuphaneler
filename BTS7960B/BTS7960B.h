@@ -6,7 +6,7 @@ class BTS7960B{
     byte R_PWM;
     byte L_PWM;
 
-    public:
+    public:  
     BTS7960B();
     BTS7960B(byte r_pwm, byte l_pwm);
     virtual ~BTS7960B();

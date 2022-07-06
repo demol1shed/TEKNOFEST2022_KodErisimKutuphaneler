@@ -2,7 +2,7 @@
 #define BTS7960B_H
 #include <Arduino.h>
 class BTS7960B{
-    private:
+private:
     byte R_PWM;
     byte L_PWM;
 

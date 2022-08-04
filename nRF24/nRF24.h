@@ -14,8 +14,8 @@ public:
     bool radyoVeriAldi;
     static const int elementSayisi = 4;
     nRF24();
-    RF24 nRF24AliciKurulum(RF24 radyo, unsigned int gucSeviyesi, unsigned int monitorFrekansi, rf24_datarate_e veriFrekansi);
-    RF24 nRF24VericiKurulum(RF24 radyo, unsigned int gucSeviyesi, unsigned int monitorFrekansi, rf24_datarate_e veriFrekansi);
+    RF24 nRF24AliciKurulum(RF24 radyo, unsigned int gucSeviyesi, rf24_datarate_e veriFrekansi);
+    RF24 nRF24VericiKurulum(RF24 radyo, unsigned int gucSeviyesi, rf24_datarate_e veriFrekansi);
     void nRF24VeriGonder(RF24 radyo, int gonderilecekVeri[], const int gonderilecekElementSayisi=3);
     //const int nRF24ElementSayisiKoy(const int _elementSayisi);
     void nRF24VeriAl(RF24 radyo,  int (&yazilacakArr)[elementSayisi], const int gonderilecekElementSayisi=3);

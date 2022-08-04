@@ -2,11 +2,11 @@
 #define BTS7960B_H
 #include <Arduino.h>
 class BTS7960B{
-    private:
+private:
     byte R_PWM;
     byte L_PWM;
 
-    public:
+    public:  
     BTS7960B();
     BTS7960B(byte r_pwm, byte l_pwm);
     virtual ~BTS7960B();

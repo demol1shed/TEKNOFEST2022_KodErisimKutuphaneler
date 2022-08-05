@@ -5,7 +5,7 @@
 nRF24::nRF24(){
 }
 // Alıcıyı hazılar.
-RF24 nRF24::nRF24AliciKurulum(RF24 radyo, unsigned int gucSeviyesi, unsigned int monitorFrekansi, rf24_datarate_e veriFrekansi){
+RF24 nRF24::nRF24AliciKurulum(RF24 radyo, unsigned int gucSeviyesi, rf24_datarate_e veriFrekansi){
     // Radyoyu başlatır.
     radyo.begin();
     // Güç seviyesini parametreye göre ayarlar.
@@ -26,7 +26,7 @@ RF24 nRF24::nRF24AliciKurulum(RF24 radyo, unsigned int gucSeviyesi, unsigned int
     return radyo;
 }
 // Göndericiyi hazırlar.
-RF24 nRF24::nRF24VericiKurulum(RF24 radyo, unsigned int gucSeviyesi, unsigned int monitorFrekansi, rf24_datarate_e veriFrekansi){
+RF24 nRF24::nRF24VericiKurulum(RF24 radyo, unsigned int gucSeviyesi, rf24_datarate_e veriFrekansi){
     // Radyoyu başlatır.
     radyo.begin()
     // Güç seviyesini parametreye göre ayarlar.
